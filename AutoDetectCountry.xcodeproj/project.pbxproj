@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4ABA76DE269DEE1500817595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA76DD269DEE1500817595 /* AppDelegate.swift */; };
-		4ABA76E0269DEE1500817595 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA76DF269DEE1500817595 /* SceneDelegate.swift */; };
 		4ABA76E2269DEE1500817595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA76E1269DEE1500817595 /* ViewController.swift */; };
 		4ABA76E5269DEE1500817595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA76E3269DEE1500817595 /* Main.storyboard */; };
 		4ABA76E7269DEE1600817595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA76E6269DEE1600817595 /* Assets.xcassets */; };
 		4ABA76EA269DEE1600817595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA76E8269DEE1600817595 /* LaunchScreen.storyboard */; };
+		4ABA76F2269DF91100817595 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA76F1269DF91100817595 /* CountriesViewController.swift */; };
+		4ABA76F4269DFDE800817595 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA76F3269DFDE800817595 /* CountryTableViewCell.swift */; };
+		4ABA76F6269DFFEE00817595 /* Countries.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA76F5269DFFEE00817595 /* Countries.plist */; };
+		4ABA76F8269E022600817595 /* VBCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA76F7269E022600817595 /* VBCountry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4ABA76DA269DEE1500817595 /* AutoDetectCountry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoDetectCountry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABA76DD269DEE1500817595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4ABA76DF269DEE1500817595 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4ABA76E1269DEE1500817595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4ABA76E4269DEE1500817595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4ABA76E6269DEE1600817595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ABA76E9269DEE1600817595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ABA76EB269DEE1600817595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ABA76F1269DF91100817595 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		4ABA76F3269DFDE800817595 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		4ABA76F5269DFFEE00817595 /* Countries.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Countries.plist; sourceTree = "<group>"; };
+		4ABA76F7269E022600817595 /* VBCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VBCountry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				4ABA76DD269DEE1500817595 /* AppDelegate.swift */,
-				4ABA76DF269DEE1500817595 /* SceneDelegate.swift */,
 				4ABA76E1269DEE1500817595 /* ViewController.swift */,
+				4ABA76F7269E022600817595 /* VBCountry.swift */,
+				4ABA76F1269DF91100817595 /* CountriesViewController.swift */,
+				4ABA76F3269DFDE800817595 /* CountryTableViewCell.swift */,
 				4ABA76E3269DEE1500817595 /* Main.storyboard */,
 				4ABA76E6269DEE1600817595 /* Assets.xcassets */,
 				4ABA76E8269DEE1600817595 /* LaunchScreen.storyboard */,
 				4ABA76EB269DEE1600817595 /* Info.plist */,
+				4ABA76F5269DFFEE00817595 /* Countries.plist */,
 			);
 			path = AutoDetectCountry;
 			sourceTree = "<group>";
@@ -126,6 +135,7 @@
 			files = (
 				4ABA76EA269DEE1600817595 /* LaunchScreen.storyboard in Resources */,
 				4ABA76E7269DEE1600817595 /* Assets.xcassets in Resources */,
+				4ABA76F6269DFFEE00817595 /* Countries.plist in Resources */,
 				4ABA76E5269DEE1500817595 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ABA76F4269DFDE800817595 /* CountryTableViewCell.swift in Sources */,
 				4ABA76E2269DEE1500817595 /* ViewController.swift in Sources */,
 				4ABA76DE269DEE1500817595 /* AppDelegate.swift in Sources */,
-				4ABA76E0269DEE1500817595 /* SceneDelegate.swift in Sources */,
+				4ABA76F8269E022600817595 /* VBCountry.swift in Sources */,
+				4ABA76F2269DF91100817595 /* CountriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,14 +298,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development: Deepu Vegi (QAQG8DWLNQ)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AutoDetectCountry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vb.AutoDetectCountry;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vb.VBHKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = KHDemo_Dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,14 +319,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development: Deepu Vegi (QAQG8DWLNQ)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AutoDetectCountry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vb.AutoDetectCountry;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vb.VBHKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = KHDemo_Dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

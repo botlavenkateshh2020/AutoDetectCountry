@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>India</string>
+		<key>flag</key>
+		<string>india_in</string>
+		<key>countryCode</key>
+		<string>+91</string>
+		<key>regionCode</key>
+		<string>IN</string>
+	</dict>
+    <dict>
+        <key>name</key>
+        <string>Germany</string>
+        <key>flag</key>
+        <string>germany_de</string>
+        <key>countryCode</key>
+        <string>+49</string>
+        <key>regionCode</key>
+        <string>DE</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>United States</string>
+        <key>flag</key>
+        <string>unitedStates_us</string>
+        <key>countryCode</key>
+        <string>+1</string>
+        <key>regionCode</key>
+        <string>US</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>United Kingdom</string>
+        <key>flag</key>
+        <string>unitedKingdom_uk</string>
+        <key>countryCode</key>
+        <string>+44</string>
+        <key>regionCode</key>
+        <string>UK</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Norway</string>
+        <key>flag</key>
+        <string>norway_no</string>
+        <key>countryCode</key>
+        <string>+47</string>
+        <key>regionCode</key>
+        <string>NO</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Japan</string>
+        <key>flag</key>
+        <string>japan_jp</string>
+        <key>countryCode</key>
+        <string>+81</string>
+        <key>regionCode</key>
+        <string>JP</string>
+    </dict>
+</array>
+</plist>
